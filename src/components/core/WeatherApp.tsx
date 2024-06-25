@@ -21,6 +21,7 @@ const WeatherApp = () => {
         data.visibility /= 1000;
         setVisibility(data.visibility.toFixed(2));
         setWindSpeed(data.wind.speed);
+        console.log(data);
       })
       .catch((err) => console.log(err));
   };

@@ -20,7 +20,12 @@ const WeatherSearch = ({ searchWeather }: PropsSearch) => {
         />
         <View style={styles.buttonWrapper}>
           <Pressable
-            style={styles.button}
+            style={[
+              styles.button,
+              {
+                borderColor: location ? "mediumorchid" : "gray",
+              },
+            ]}
             onPress={() => searchWeather(location)}
           >
             <Text>Search</Text>
